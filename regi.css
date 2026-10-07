@@ -1,0 +1,202 @@
+:root {
+    --primary: #d52b2b;
+    --text: #222;
+    --border: #999;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+form {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px 20px;
+    background: #eeeeee;
+    border: 1px solid #999;
+}
+
+.required {
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+
+.steps {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: var(--primary);
+}
+
+p {
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+label {
+    display: inline-block;
+    width: 260px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    vertical-align: middle;
+}
+
+label span {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 300px;
+    padding: 4px 6px;
+    margin-left: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+}
+
+textarea {
+    width: 400px;
+    padding: 6px;
+    margin-left: 8px;
+    font-family: inherit;
+    vertical-align: top;
+    border: 1px solid var(--border);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #4285c5;
+}
+
+.radio-area {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.radio-area input[type="radio"] {
+    width: auto;
+    margin: 0 3px 0 4px;
+}
+
+.radio-area label {
+    display: inline-block;
+    width: auto;
+    margin: 0 7px 0 0;
+    text-align: left;
+    font-weight: normal;
+}
+
+small {
+    display: block;
+    margin-left: 260px;
+    font-size: 12px;
+}
+
+.normal-label {
+    width: auto;
+    margin-left: 5px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.check-area {
+    margin: 5px 0;
+    margin-left: 260px;
+}
+
+.check-area input[type="checkbox"] {
+    margin: 3px 0;
+}
+
+.check-area .normal-label {
+    display: inline;
+}
+
+.small-input {
+    width: 65px !important;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 12px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    margin: 0 3px;
+    padding: 3px 14px;
+    font-size: 14px;
+    border: 1px solid #777;
+    border-radius: 12px;
+    background: #eeeeee;
+    color: var(--text);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #dddddd;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin-top: 8px;
+}
+
+.secure {
+    font-size: 13px;
+}
+
+@media (max-width: 920px) {
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    label {
+        width: 150px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 220px;
+    }
+
+    .check-area {
+        margin-left: 150px;
+    }
+
+    small {
+        margin-left: 150px;
+    }
+}
